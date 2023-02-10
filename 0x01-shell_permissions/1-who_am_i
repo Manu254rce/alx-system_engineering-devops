@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#!bin/bash
 
-whoami
-=======
 #!/bin/bash
-su whoami\n
->>>>>>> db30ef04fd4376e24c43b79e93802d2d49b0fc54
+whoami
+
