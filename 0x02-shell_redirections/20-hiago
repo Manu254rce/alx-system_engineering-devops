@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Chicago" | tr -d ['C' 'c']
+read string; echo "$string" | tr -d ['C''c']
