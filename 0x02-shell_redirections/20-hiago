@@ -1,2 +1,2 @@
 #!/bin/bash
-read string | echo "$string" | tr -d ['C''c']
+tr -d ['C''c']
