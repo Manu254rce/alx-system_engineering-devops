@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Replace all A AND Z charachters respectively" | tr A,c Z,e
