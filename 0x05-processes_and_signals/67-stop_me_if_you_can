@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# this function terminates a process but the signal is redirected
 pkill -f ./7-highlander

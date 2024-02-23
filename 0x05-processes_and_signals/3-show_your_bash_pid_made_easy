@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# this function prints out processes named bash more easily
 pgrep -l bash

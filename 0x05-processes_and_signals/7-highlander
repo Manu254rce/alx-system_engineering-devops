@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# this fnction prints out infinitely with a function to redirect signals
 sigterm()
 {
 	echo "I am invincible!!!"

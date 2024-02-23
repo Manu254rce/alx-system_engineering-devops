@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# this function prints out infinitely with a 2s delay
 while true
 do
 	echo "To infinity and beyond"

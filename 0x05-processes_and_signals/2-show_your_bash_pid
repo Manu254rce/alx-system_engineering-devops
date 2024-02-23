@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# this function prints out a list of all processes named 'bash'
 # shellcheck disable=SC2009
 ps auxf | grep -v bash

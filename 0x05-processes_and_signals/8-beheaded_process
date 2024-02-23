@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# this function kills a process via SIGKILL
 kill -9 "$(pgrep -f './7-highlander')"
 
