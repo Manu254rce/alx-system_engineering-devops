@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# shell script that overrides signals
+sigquit()
+{
+	rm -rf /var/run/myscript.pid
+	exit 0
+}
+sigint()
+{
+	echo "Y U no love me?!"
+}
+
+sigterm()
+{
+	echo "I hate the kill command"
+	rm -rf /var/run/myscript.pid
+	exit 0
+}
+
+trap 'sigint' SIGINT
+trap 'sigterm' SIGTERM
+trap 'sigquit' SIGQUIT
+
+echo $$ > /var/run/myscript.pid
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
