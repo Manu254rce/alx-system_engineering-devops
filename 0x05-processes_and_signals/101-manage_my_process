@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# script that manages another script via command line
+handle_start()
+{
+	./manage_my_process &
+	echo $! > /var/run/my_process.pid
+	echo "manage_my_process started"
+}
+
+handle_stop()
+{
+	if [ -f /var/run/my_process.pid ]; then
+		kill -15 "$(cat /var/run/my_process.pid)"
+		rm -rf /var/run/my_process.pid
+	fi
+
+	echo "manage_my_process stopped"
+}
+
+handle_restart()
+{
+	./manage_my_process &
+        echo $! > /var/run/my_process.pid
+
+	if [ -f /var/run/my_process.pid ]; then
+                kill -15 "$(cat /var/run/my_process.pid)"
+                rm -rf /var/run/my_process.pid
+        fi
+
+	echo "manage_my_process restarted"
+}
+
+if [ "$1" == 'start' ]; then
+	handle_start
+elif [ "$1" == 'stop' ]; then
+	handle_stop
+elif [ "$1" == 'restart' ]; then
+	handle_restart
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
+
+
