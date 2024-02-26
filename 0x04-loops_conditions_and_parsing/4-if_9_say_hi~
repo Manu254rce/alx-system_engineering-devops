@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# shell script that prints "Best School" 10 times, changing at 9
+count=0
+until [ $count -eq 10 ]; do
+	if [ $count = 9 ]; then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((count++))
+done
