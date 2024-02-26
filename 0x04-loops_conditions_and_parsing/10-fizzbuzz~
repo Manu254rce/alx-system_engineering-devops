@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # script that prints "FizzBuzz"
 for i in $(seq 1 100); do
-	if (( $i % 3 == 0)); then
+	if (( i % 3 == 0)); then
 		echo "Fizz"
-	elif (( $i % 5 == 0)); then
+	elif (( i % 5 == 0)); then
 		echo "Buzz"
-	elif (( $i % 3 == 0 && $i % 5 == 0 )); then
+	elif (( i % 3 == 0 && i % 5 == 0 )); then
 		echo "FizzBuzz"
 	else
 		echo "$i"
