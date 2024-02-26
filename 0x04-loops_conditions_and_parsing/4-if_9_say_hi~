@@ -2,7 +2,8 @@
 # shell script that prints "Best School" 10 times, changing at 9
 count=1
 while [ $count -lt 10 ]; do
-	if [ $count = 9 ]; then
+	if [ $count -eq 9 ]; then
+		echo "Best School"
 		echo "Hi"
 	else
 		echo "Best School"
