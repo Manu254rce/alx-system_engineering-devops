@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# script code that prints out contents of the current working dir
 for file in *; do
 	if [[ $file != .* ]]; then
 		echo "$file"
