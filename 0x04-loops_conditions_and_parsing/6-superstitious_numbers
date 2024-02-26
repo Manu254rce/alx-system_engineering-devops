@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-"shell script that prints out superstitious numbers"
+# shell script that prints out superstitious numbers
 count=1
 while [ $count -le 20 ]; do
 	case $count in
