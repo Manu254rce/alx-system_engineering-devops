@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# shell script that listens on a specific port
+nc -l -p 98

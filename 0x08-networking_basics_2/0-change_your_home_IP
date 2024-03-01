@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# shell script that rdirects the localhost ip
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
+
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
