@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+# Script that configure SSH to our needs 
+# so that you can connect to a server without typing 
+# a password
+
+Host *
+  IdentityFile ~/.ssh/school
+  PasswordAuthentication no
