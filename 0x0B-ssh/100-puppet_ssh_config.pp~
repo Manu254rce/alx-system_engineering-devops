@@ -1,4 +1,3 @@
-# scrpit that set up SSH without password
 file { '/home/vagrant/.ssh/config':
   ensure => file,
   owner => 'vagrant',
